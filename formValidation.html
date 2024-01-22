@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Form</title>
+      <script src="./script/script.js"></script>
+      <link rel="stylesheet" href="./style/style.css">
+   </head>
+   <body>
+      <form name="formName" method="post" action="success.html">
+         <fieldset >
+            <h3 class="title">Registration Form</h3>
+            <br><br>
+            <label class="labelColor">First Name</label>
+            <input type="text" id="firstName" class="firstName"><br><br>
+            <span id="lblError" style="color: red"></span><br>
+            <label class="labelColor">Last Name</label>
+            <input type="text" id="lastName" class="lastName"><br><br>
+            <span id="lblError1" style="color: red"></span><br>
+            <label class="labelColor">Address  </label>
+            <textarea id="address"  class="address"></textarea>
+            <br><br>
+            <span id="lblError2" style="color: red"></span><br>
+            <label class="labelColor">Mobile No</label>
+            <input type="text" id="phNo" class="phNo"><br><br>
+            <span id="lblError3" style="color: red"></span><br>
+            <label class="labelColor">Email</label>
+            <input type="email" id="email" class="email"><br><br>
+            <span id="lblError4" style="color: red"></span><br>
+            <label class="labelColor">Password</label>
+            <input type="password" id="passWord" class="passWord"><br><br>
+            <span id="lblError5" style="color: red"></span><br>
+            <label class="labelColor">Confirm Password</label>
+            <input type="password" id="confirmPassword" class="confirmPassword"><br><br>
+            <span id="lblError6" style="color: red"></span><br>
+            <input type="submit" value="Submit" id="submitBtn" class="submitBtn" onclick="validates()">
+         </fieldset>
+      </form>
+   </body>
+</html>
