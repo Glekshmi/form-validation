@@ -6,33 +6,58 @@
       <link rel="stylesheet" href="./style/style.css">
    </head>
    <body>
-      <form name="formName" method="post" action="success.html">
-         <fieldset >
-            <h3 class="title">Registration Form</h3>
-            <br><br>
-            <label class="labelColor">First Name</label>
-            <input type="text" id="firstName" class="firstName"><br><br>
-            <span id="lblError" style="color: red"></span><br>
-            <label class="labelColor">Last Name</label>
-            <input type="text" id="lastName" class="lastName"><br><br>
-            <span id="lblError1" style="color: red"></span><br>
-            <label class="labelColor">Address  </label>
-            <textarea id="address"  class="address"></textarea>
-            <br><br>
-            <span id="lblError2" style="color: red"></span><br>
-            <label class="labelColor">Mobile No</label>
-            <input type="text" id="phNo" class="phNo"><br><br>
-            <span id="lblError3" style="color: red"></span><br>
-            <label class="labelColor">Email</label>
-            <input type="email" id="email" class="email"><br><br>
-            <span id="lblError4" style="color: red"></span><br>
-            <label class="labelColor">Password</label>
-            <input type="password" id="passWord" class="passWord"><br><br>
-            <span id="lblError5" style="color: red"></span><br>
-            <label class="labelColor">Confirm Password</label>
-            <input type="password" id="confirmPassword" class="confirmPassword"><br><br>
-            <span id="lblError6" style="color: red"></span><br>
-            <input type="submit" value="Submit" id="submitBtn" class="submitBtn" onclick="validates()">
+      <form action="success.html" method="post" onsubmit="return validates()">
+         <fieldset>
+            <div class="formBody">
+               <div class="heading">
+                  <h3 class="title">Registration Form</h3>
+               </div>
+               <div class="content">
+                  <div class="rowOne">
+                     <label class="labelColor">First Name</label><br>
+                     <input type="text" id="firstName" class="firstName">
+                     <p id="lblError" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowTwo">
+                     <label class="labelColor">Last Name</label><br>
+                     <input type="text" id="lastName" class="lastName">
+                     <p id="lblError1" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowThree">
+                     <label class="labelColor">Address  </label><br>
+                     <textarea id="address"  class="address" row="40" cols="21"></textarea>
+                     <p id="lblError2" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowFour">
+                     <label class="labelColor">Mobile No</label><br>
+                     <input type="text" id="phNo" class="phNo" maxLength="10">
+                     <p id="lblError3" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowFive">
+                     <label class="labelColor">Email</label><br>
+                     <input type="email" id="email" class="email">
+                     <p id="lblError4" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowSix">
+                     <label class="labelColor">Password</label><br>
+                     <input type="password" id="passWord" class="passWord">
+                     <p id="lblError5" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <div class="rowSeven">
+                     <label class="labelColor">Confirm Password</label><br>
+                     <input type="password" id="confirmPassword" class="confirmPassword">
+                     <p id="lblError6" class="errorColor"></p>
+                     <br>
+                  </div>
+                  <input type="submit" value="Submit" id="submitBtn" class="submitBtn" >
+               </div>
+            </div>
          </fieldset>
       </form>
    </body>
